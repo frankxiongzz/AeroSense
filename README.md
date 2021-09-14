@@ -32,9 +32,9 @@ Software architecture description
 2. Start the sensor to configure the network, and point the destination IP address and port of AeroSense to the server. For the network configuration tutorial, refer to " AeroSense Assure User Development Guide Manual"
 3. After configured successfully, you can print KeepAlive and other requests on the console.
 
-####Skill
+#### Skill
 If you need to test KeepAlive messages multiple times, you can restart AeroSense repeatedly and power off. AeroSense will request the server immediately after power on.
 
-####FAQ
+#### FAQ
 1. Using the AeroSenseTool tool, when the test server returns "OK" instead of the OK string, the Json is returned at this time, and the string should be returned.For modification, please refer to https://blog.csdn.net/baidu_27055141/ article/details/91544019
 2. Return Response,remove AcceptCharset,and call setWriteAcceptCharset(false);
