@@ -52,6 +52,9 @@ public class RadarController {
                 case "HeatMap": //HeatMap
                     log.info("Receive AeroSense HeatMap Upload, ID:" + Map[1] + ", Status：" + Map[2]);
                     break;
+                case "Invade": //Invade
+                    log.info("Receive AeroSense Invade, ID:" + Map[1] + ", Status：" + Map[2]);
+                    break;
                 default:
                     return "OK";
             }
