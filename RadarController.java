@@ -50,7 +50,7 @@ public class RadarController {
                     log.info("Receive AeroSense FallDetect Request, ID:" + Map[1] + ", Version:" + Map[2]);
                     break;
                 case "HeatMap": //HeatMap
-                    log.info("Receive AeroSense FallDetect Request, ID:" + Map[1] + ", Status：" + Map[2]);
+                    log.info("Receive AeroSense HeatMap Upload, ID:" + Map[1] + ", Status：" + Map[2]);
                     break;
                 default:
                     return "OK";
