@@ -22,7 +22,6 @@ public class CacheHeatMap {
      * @return more fram to one file
      */
     public byte[] cacheHeatMap(String radar, int tag, byte[] data) {
-        System.out.println("进来处理:" + data.length);
         byte[] bytes1 = cache.get(radar);
         byte[] bytes2;
 
@@ -30,7 +29,7 @@ public class CacheHeatMap {
             if (tag == 0) {
                 return data;
             }
-            //未完成，放入缓存后直接退出
+            //unfinished, get cache
             cache.put(radar, data);
             return null;
         } else {
